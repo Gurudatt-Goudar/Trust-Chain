@@ -1,0 +1,66 @@
+.certificate {
+  max-width: 800px; /* Limit the width of the certificate */
+  margin: 0 auto; /* Center the certificate */
+  padding: 30px; /* Increase padding for better spacing */
+  border: 5px solid #151414; /* Slightly thicker border for a more defined look */
+  border-radius: 10px; /* Rounded corners for a softer appearance */
+  background: #fff; /* White background for a clean look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+  position: relative; /* Positioning context for absolute elements */
+  text-align: center; /* Center-align text for a balanced look */
+}
+
+
+
+.certificate-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.certificate-header img {
+  max-width: 150px; /* Restrict the width of the logo */
+  margin-bottom: 10px; /* Space below the logo */
+}
+
+.certificate-body {
+  text-align: center;
+  color: #000; /* Center-align text in the body */
+}
+
+.certificate-body p {
+  margin: 10px 0; /* Margin for spacing between paragraphs */
+  color: #000;
+}
+
+.certificate-body h2 {
+  font-size: 24px; /* Font size for the student's name */
+  margin: 10px 0; 
+  color: #000;/* Margin for spacing around the name */
+}
+
+.certificate-body h3 {
+  font-size: 20px; /* Font size for department or other details */
+  font-weight: bold; /* Bold text for emphasis */
+  margin: 10px 0; /* Margin for spacing around the department */
+}
+
+.certificate-body .seal {
+  max-width: 100px; /* Restrict the size of the seal */
+  margin: 20px auto; /* Center the seal and provide spacing around it */
+}
+
+.certificate-footer {
+  text-align: center; /* Center-align text in the footer */
+  margin-top: 30px; /* Margin above the footer */
+}
+
+.certificate-footer p {
+  margin: 5px 0; /* Margin for spacing in the footer */
+}
+
+.signature-line {
+  width: 200px; /* Fixed width for the signature line */
+  height: 2px; /* Height of the signature line */
+  background: #000; /* Black color for the line */
+  margin: 20px auto; /* Center the line horizontally and provide spacing around it */
+}

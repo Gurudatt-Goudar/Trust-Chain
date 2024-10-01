@@ -1,0 +1,122 @@
+/* Dark theme background and text for Issued Certificates page */
+.issued-certificates-container {
+    background-image: url('../../assets/blockchain-certificate-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    background-color: #4040b0;
+    color: #f1f1f3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set max width to 90% of the screen width */
+    margin: auto;
+    height: 1000%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Attractive headline styling */
+.title {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #4ca1af, #657897); /* Gradient background */
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 5px;
+    width: auto;
+    height: auto;
+}
+
+/* Hide title when a certificate is shown */
+.title.hidden {
+    display: none;
+}
+
+/* Certificate list */
+.certificate-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 80%; 
+    margin: auto;
+}
+
+/* Certificate item styling */
+.certificate-item {
+    background-color: #292b2f;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-item:hover {
+    background-color: #3a3d42;
+}
+
+.loading-text, .error-text {
+    color: #ff5e57;
+    text-align: center;
+}
+
+.certificate-item p {
+    margin: 0;
+    font-size: 16px;
+    
+}
+
+.certificate-item strong {
+    color: #4ca1af;
+}
+
+/* Certificate details - smaller, responsive size */
+.certificate-details {
+    
+    padding: 2px;
+    border-radius: 8px;
+    background-color: rgba(6, 35, 32, 0.166);
+    border-style:groove;
+    color: #000000d4;
+    width: 65%; /* Reduced size for the certificate */
+    height: 100%; 
+    /* box-shadow: 0 4px 12px rgba(18, 18, 16, 0.296); */
+    margin: 10px auto;
+    border:none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*max-height: 70vh; /* Smaller size to prevent scrolling */
+    /*overflow-y: auto;*/
+ /* Maintain border without causing overflow */
+}
+
+/* Back button styling */
+.back-button {
+    background-color: #4ca1af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:40% ;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #357a82;
+}
+.transaction-link {
+    color: blue; /* Make sure the link is visible */
+    text-decoration: underline; /* To show it's a link */
+    pointer-events: auto; /* Ensure pointer events are allowed */
+}

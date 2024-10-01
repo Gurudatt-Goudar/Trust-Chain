@@ -1,0 +1,210 @@
+/* HomeComponent.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Ensures no horizontal overflow on the body */
+}
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('../../assets/blockchain-certificate-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    width: 100%; /* Ensures full width */
+    padding: 0 15px; /* Provides some padding to avoid content hitting the edge */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+.header-container {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.seal {
+    width: 70px;
+    margin-right: 2px;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    font-size: 35px;
+    margin: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header-subtitle {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.menu {
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    background-color: rgba(14, 96, 95, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center; /* Center the menu */
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-link:hover {
+    background-color: blue;
+}
+
+.card {
+    background: rgba(5, 13, 13, 0.8);
+    color: #ffffff;
+    border: 2px solid rgba(32, 147, 167, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(78, 138, 148, 0.457);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    font-size: 64px;
+    color: rgba(249, 246, 250, 0.8);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 18px;
+}
+
+.button-container {
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.verify-button {
+    width: 220px; /* Set width here */
+    height: 50px; /* Set height for consistent sizing */
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px; /* Match existing border radius */
+    background: rgba(4, 9, 10, 0.903);
+    border: 2px solid rgba(18, 216, 216, 0.8);
+    padding: 15px 30px; /* Maintain padding */
+    font-size: 20px; /* Maintain font size */
+    box-shadow: 0 4px 8px rgba(7, 127, 127, 0.648);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.verify-button:hover {
+    background-color: rgba(15, 206, 190, 0.833);
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(97, 186, 203, 0.8);
+}
+
+/* Glowing Effect */
+.verify-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.verify-button:hover:before {
+    opacity: 1;
+}
+
+.about-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 28px;
+    color: #660be5;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-link {
+    color: #cd06af;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    background-color: rgb(12, 7, 41);
+    padding: 20px;
+    color: #ffffff;
+    width: 100%;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

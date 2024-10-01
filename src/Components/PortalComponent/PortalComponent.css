@@ -1,0 +1,29 @@
+/* src/Components/PortalComponent.css */
+nav {
+  background-color: #282c34; /* Dark background for the navbar */
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center; /* Center the nav items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  margin-bottom: 15px;
+}
+
+nav a {
+  color: #61dafb; /* Light blue color for nav links */
+  margin: 0 1rem; /* Space out the nav links */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a.active {
+  color: #fff; /* Highlight active link with white color */
+}
+
+nav a:hover {
+  color: #fff; /* Change color on hover */
+}
+
+nav a.logout {
+  color: red; /* Red color for logout link */
+}
